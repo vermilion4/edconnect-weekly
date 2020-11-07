@@ -1,0 +1,36 @@
+   body{
+                background-color: gold;
+            }
+            h1{
+                text-align: center;
+            }
+            .pin{
+                position: absolute ;
+            }
+            .pic1{
+                position: relative;
+                left:1100px;
+            }
+            .ball{
+                text-align: right;
+            }
+            audio{
+                margin-top: 325px;
+            }
+            a:hover{
+                color:red;
+            }
+            a:active{
+                color:green;
+            }
+            div{
+                position:absolute;
+                border:1px solid black;
+                width: 1000px;
+                height: 200px;
+                background-color: black;
+            }
+            #intro{
+                color:gold
+            }
+            
