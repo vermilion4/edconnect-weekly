@@ -1,0 +1,345 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+main{
+    height: 100%;
+}
+header{
+    border:1px solid blue;
+    background-color: blue;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.logo{
+    margin-left: 5px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+input[type='text']{
+    padding: 5px;
+    border-radius: 5%;
+}
+.search-button{
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    margin-right: 5px;
+
+}
+
+.nav-r{
+    margin-left: 58%;
+}
+.nav-r-2{
+    margin-left: 1%;
+}
+
+.content-1{
+    margin-top: 6px;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #E8E8E8;
+
+}
+.content-1 h1, .content-1 p{
+    margin-left: 2%;
+}
+.button-1, .button-2{
+    color: white;
+    padding: 5px;
+    border: none;
+}
+.button-1{
+    margin-left: 2%;
+    background-color: blue;
+}
+.button-2{
+    background-color: black;
+}
+
+.content-2{
+    margin-top: 12px;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    overflow: auto;
+}
+.card-1, .card-2, .card-3{
+    width: 31%;
+    float: left;
+    border: 1px solid #E8E8E8;
+}
+.card-2, .card-3{
+   margin-left: 3%;
+}
+.content-2 h3{
+    color: dodgerblue;
+    margin-left: 3%;
+}
+.content-2 h5{
+    color: grey;
+    margin-left: 3%;
+}
+.content-2 p{
+    margin-left: 3%;
+}
+
+footer{
+    background-color: #E8E8E8;
+    padding: 1px;
+    text-align: right;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+footer h5{
+    color: grey;
+}
+footer strong{
+    color: black;
+    font-weight: 900;
+}
+
+.login-form{
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.login-form input[type='email'], .login-form input[type='password']{
+    padding: 5px 150px 5px 9px;
+}
+.login-form input[type='submit']{
+    margin-left: 0;
+}
+
+.register-form{
+    margin: 5% 25% 10%;
+    overflow: auto;
+}
+.register-form input[type='text'],#password{
+    padding-right: 150px;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 8%;
+}
+#password{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 7px;
+}
+#pro{
+    padding: 5px 150px 5px 5px;
+    margin-right: 10px;
+}
+#year{
+    padding:5px 55px 5px 5px;
+}
+.register-form label{
+    float: left;
+}
+.register-form span{
+    display: block;
+}
+#matric{
+    padding: 5px 0px;
+}
+.button-3{
+    margin-top: 3%;
+    margin-left: 0;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    float: left;
+    margin-left: 0;
+}
+.in_h1{
+    display: inline;
+    margin-left: 15%;
+}
+.in_p{
+    display: inline;
+    line-height: 98px;
+}
+.profile{
+    margin-left: 15%;
+    background-color: #E8E8E8;
+}
+.profile th{
+    padding-right: 210px;
+}
+hr{
+    margin-left: 15%;
+    margin-right: 24%;
+    color: #E8E8E8;
+}
+.profile_h1{
+    margin-left: 15%;
+    margin-top: 4%;
+}
+.profile_form{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.profile_form input[type='text'], .profile_form input[type='email']{
+    padding-right: 110px;
+    margin-right: 10px;
+}
+.profile_form input[type='email']{
+    padding: 5px 110px 5px 5px;
+}
+.profile_form select{
+    padding: 5px 45px 5px 5px;
+    margin-right: 10px;
+}
+.profile_form_2{
+    margin-left: 25%;
+    margin-right: 35%;
+    margin-bottom: 3%;
+    overflow: auto;
+}
+
+.profile_form_2 input[type='password']{
+    margin-right: 5px;
+    padding: 5px 45px 5px 5px;
+
+}
+.search_form{
+    display: inline;
+}
+.search_form p{
+    margin-top: 0px;
+    padding: 4px 3px;
+    background-color: grey;
+}
+.search_form input[type='text']{
+    padding-right: 300px;
+    margin-right: 10px;
+    width: 300px;
+}
+.search_form select{
+    padding: 4px 3px;
+    margin-right: 10px;
+}
+.search_form h1{
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.button-4{
+    color: white;
+    background-color: blue;
+    padding: 5px 8px;
+    margin-top: -2px;
+}
+.search_form_back{
+    padding: 8px 5px 5px 18px;
+    background-color: #E8E8E8;
+    height: 30px;
+    margin-left: 20%;
+    margin-right: 23%;
+}
+.in_h3{
+    display: inline;
+    margin-left: 0;
+}
+.in_h4{
+    display: inline;
+    line-height: 50px;
+    color: grey;
+}
+.all{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.search_result{
+    border: 1px solid black;
+    margin-top: 1%;
+    margin-left: 20%;
+    width: 250px;
+    margin-bottom: 4%;
+}
+.search_result p{
+    margin-left: 8%;
+}
+.blue{
+    color:dodgerblue;
+}
+#grey{
+    color: grey;
+}
+.create_project{
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.create_project input[type='text']{
+    padding-right: 0px;
+    width: 450px;
+}
+.create_project textarea{
+    padding-right: 280px;
+}
+.h1{
+    margin-left: 15%;
+    margin-top: 3%;
+}
+.edit{
+    width: 1020px;
+    margin-left: 15%;
+    height: 620px;
+
+}
+.edit_project{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-right: 10%;
+}
+.edit_project input[type='text']{
+    padding-right: 0px;
+    width: 450px;
+}
+
+.edit_hr{
+    margin-left: 0;
+    width: 450px;
+}
+.edit_project2{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.pfile{
+    border: 1px solid #E8E8E8;
+    width: 430px;
+    margin-top: 2%;
+    padding-left: 15px;
+    background-color: #E8E8E8;
+}
+.nupload{
+    border: 1px solid #E8E8E8;
+    width: 445px;
+    text-align: center;
+}
+.pfile2{
+    border: 1px solid #E8E8E8;
+    width: 430px;
+    padding-left: 15px;
+    background-color: #E8E8E8;
+    height: 40px;
+}
+.pfile2 h5{
+    color: dodgerblue;
+}
+.nupload2{
+    border: 1px solid #E8E8E8;
+    width: 422px;
+    padding-left: 5%;
+    height: 40px;
+}
+
+
+
