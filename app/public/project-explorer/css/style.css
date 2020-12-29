@@ -12,8 +12,13 @@ header{
     padding-top: 1%;
     padding-bottom: 1%;
 }
-.logo{
-    margin-left: 5px;
+ul{
+    margin-top: 2px;
+}
+.logo {
+    margin-left: 0;
+    margin-right: 5px;
+    line-height: 30px;
 }
 header a{
     text-decoration: none;
@@ -27,6 +32,7 @@ input[type='text']{
     color: white;
     background-color: blue;
     padding: 5px;
+    margin-left: 5px;
     margin-right: 5px;
 
 }
@@ -339,6 +345,10 @@ hr{
     width: 422px;
     padding-left: 5%;
     height: 40px;
+}
+li{
+    list-style: none;
+    display: inline;
 }
 
 
