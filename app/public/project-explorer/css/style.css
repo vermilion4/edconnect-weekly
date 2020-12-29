@@ -15,10 +15,10 @@ header{
 ul{
     margin-top: 2px;
 }
-.logo {
+.logo h3{
     margin-left: 0;
     margin-right: 5px;
-    line-height: 30px;
+    margin-top: 5px;
 }
 header a{
     text-decoration: none;
@@ -33,15 +33,15 @@ input[type='text']{
     background-color: blue;
     padding: 5px;
     margin-left: 5px;
-    margin-right: 5px;
-
 }
 
 .nav-r{
-    margin-left: 58%;
+    margin-left: 55%;
+    opacity: 0.4;
 }
 .nav-r-2{
     margin-left: 1%;
+    opacity: 0.4;
 }
 
 .content-1{
