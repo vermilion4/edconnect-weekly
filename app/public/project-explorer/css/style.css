@@ -59,16 +59,25 @@ input[type='text']{
 .button-1, .button-2{
     color: white;
     padding: 5px;
-    border: none;
 }
 .button-1{
     margin-left: 2%;
     background-color: blue;
 }
+.button-1:hover{
+    background-color: white;
+    color: blue;
+}
 .button-2{
     background-color: black;
 }
-
+.button-2:hover{
+    background-color: white;
+    color: black;
+}
+a:hover{
+    color: black;
+}
 .content-2{
     margin-top: 12px;
     margin-left: 13%;
@@ -164,6 +173,10 @@ footer strong{
     float: left;
     margin-left: 0;
 }
+.button-3:hover{
+    background-color: white;
+    color: blue;
+}
 .in_h1{
     display: inline;
     margin-left: 15%;
@@ -241,6 +254,10 @@ hr{
     background-color: blue;
     padding: 5px 8px;
     margin-top: -2px;
+}
+.button-4:hover{
+    background-color: white;
+    color: blue;
 }
 .search_form_back{
     padding: 8px 5px 5px 18px;
