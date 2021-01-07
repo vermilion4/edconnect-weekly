@@ -2,49 +2,82 @@
 <html>
     <head>
         <title>Project Explorer</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>>
+
+        <style>
+            h5{
+                color: grey;
+            }
+            strong{
+                color: black;
+            }
+        </style>
     </head>
     <body>
-        <!--This is the signup page of the project; Student should be able to create an account with the below information-->
-        <header>
-            <nav>
-                <ul>
-                    <li style="float: left"><a href="index.html" class="logo"><h3>Project Explorer</h3></a></li>
-                    <li style="float: left"><form><input type="text" placeholder="Search Projects"></form></li>
-                    <li><input type="submit" class="search-button" value="Search"></form></li>
-                    <li><a href='search.html' class="nav-r-2">Projects</a></li>
-                    <li><a href='createProject.html' class="nav-r-2">Submit</a></li>
-                    <li><a class="nav-r" href='register.html'>Sign Up</a></li>
-                    <li><a class="nav-r-2" href='login.html'>Login</a></li>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+                <form class="form-inline my-2 my-lg-0" name="prp">
+                    <input class="form-control" type="text" placeholder="Search Projects" style="margin-right: 5px;">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="createProject.html">Submit</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
         <main>
 
-            <form class="register-form">
+            <form class="register-form" style="margin: 10% 25% 10% 30%;">
                 <h2>Register</h2>
     <label for="firstname">
         <span>First Name </span>
-                    <input type='text' id="firstname" placeholder="First name"/>
+                    <input type='text' class="form-control" id="firstname" placeholder="First name" style="padding-right: 90px"/>
             </label>
 
                 <label for="lastname">
         <span>Last Name</span>
-                    <input type='text' id="lastname" placeholder="Last name"/>
+                    <input type='text' class="form-control" id="lastname" placeholder="Last name" style="padding-right: 90px"/>
                 </label>
 
                 <label for="email">
                     <span>Email Address</span>
-                    <input type='text' id="email" placeholder="Your Email address"/>
+                    <input type='text' class="form-control" id="email" placeholder="Your Email address" style="padding-right: 90px"/>
                 </label>
 
                 <label for="password">
                 <span>Password</span>
-                    <input type='password' id="password" placeholder="Your Password"/>
+                    <input type='password' class="form-control" id="password" placeholder="Your Password" style="padding-right: 90px"/>
                 </label>
 
                 <label for="pro">
-                <span>Program </span> <select id="pro">
+                <span>Program </span> <select class="form-control" id="pro">
                     <option>Choose...</option>
                     <option>Computer Science</option>
                     <option>Public Health</option>
@@ -56,11 +89,11 @@
 
                 <label for="matric">
                 <span>Matriculation Number </span>
-                    <input type='text' placeholder="e.g. 16/2020" id="matric"/>
+                    <input type='text' class="form-control" placeholder="e.g. 16/2020" id="matric"/>
                 </label>
 
                 <label for="year">
-                <span>Graduation Year</span> <select id="year">
+                <span>Graduation Year</span> <select class="form-control" id="year" >
                     <option>Choose...</option>
                     <option>2020</option>
                     <option>2021</option>
@@ -71,13 +104,17 @@
                     <option>2026</option>
                 </select></label>
 
-                <input type="submit" value="Sign Up" class="button-3"/>
+                <input type="submit" value="Sign Up" class="btn btn-primary"/>
 
             </form>
 
     </main>
-        <footer>
-            <h5>Project Explorer &copy 2020 &middot <strong>Edconnect</strong></h5>
-        </footer>
+
+    <footer class="jumbotron" style="padding: 5px 0;
+                                    margin:5% 10% 3% 10%;
+                                    text-align: right;">
+        <h5 style="font-size: 15px">Project Explorer &copy 2020 &middot <strong>Edconnect</strong></h5>
+    </footer>
+
     </body>
     </html>
