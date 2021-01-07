@@ -53,60 +53,85 @@
         </nav>
     </header>
         <main>
+            <h1 style="margin: 5% 25% 2% 20%;">Sign Up</h1>
+            <form style="margin-left: 20% ">
 
-            <form class="register-form" style="margin: 10% 25% 10% 30%;">
-                <h2>Register</h2>
-    <label for="firstname">
-        <span>First Name </span>
-                    <input type='text' class="form-control" id="firstname" placeholder="First name" style="padding-right: 90px"/>
-            </label>
+                <div class="row" style="margin-right: 20%">
+    <div class="col">
+                <div class="form-group">
+                    <label for="exampleInputText1">First Name</label>
+                    <input type="text" class="form-control" id="exampleInputText1" width="300px" placeholder="First name">
+                </div>
+    </div>
 
-                <label for="lastname">
-        <span>Last Name</span>
-                    <input type='text' class="form-control" id="lastname" placeholder="Last name" style="padding-right: 90px"/>
-                </label>
+                <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleInputText2">Last Name</label>
+                    <input type="text" class="form-control" id="exampleInputText2" placeholder="Last name">
+                </div>
+                </div>
+                </div>
 
-                <label for="email">
-                    <span>Email Address</span>
-                    <input type='text' class="form-control" id="email" placeholder="Your Email address" style="padding-right: 90px"/>
-                </label>
+                <div class="row" style="margin-right: 20%">
 
-                <label for="password">
-                <span>Password</span>
-                    <input type='password' class="form-control" id="password" placeholder="Your Password" style="padding-right: 90px"/>
-                </label>
+                <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email address">
+                </div>
+                </div>
 
-                <label for="pro">
-                <span>Program </span> <select class="form-control" id="pro">
-                    <option>Choose...</option>
-                    <option>Computer Science</option>
-                    <option>Public Health</option>
-                    <option>Computer Information Systems</option>
-                    <option>Physics</option>
-                    <option>Accounting</option>
-                    <option>Mathematics</option>
-                </select></label>
+                <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Password">
+                </div>
+                </div>
+                </div>
 
-                <label for="matric">
-                <span>Matriculation Number </span>
-                    <input type='text' class="form-control" placeholder="e.g. 16/2020" id="matric"/>
-                </label>
+                <div class="row" style="margin-right: 20%">
+                    <div class="col-4">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Program</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Choose...</option>
+                        <option>Computer Science</option>
+                        <option>Public Health</option>
+                        <option>Computer Information Systems</option>
+                        <option>Physics</option>
+                        <option>Accounting</option>
+                        <option>Mathematics</option>
+                    </select>
+                </div>
+                    </div>
 
-                <label for="year">
-                <span>Graduation Year</span> <select class="form-control" id="year" >
-                    <option>Choose...</option>
-                    <option>2020</option>
-                    <option>2021</option>
-                    <option>2022</option>
-                    <option>2023</option>
-                    <option>2024</option>
-                    <option>2025</option>
-                    <option>2026</option>
-                </select></label>
+                    <div class="col-4">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Matriculation Number</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. 16/2020">
+                </div>
+                    </div>
 
+                    <div class="col-4">
+                <div class="form-group">
+                    <label for="year">Graduation Year</label>
+                    <select class="form-control" id="year">
+                        <option>Choose...</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                    </select>
+                </div>
+                    </div>
+                </div>
                 <input type="submit" value="Sign Up" class="btn btn-primary"/>
 
             </form>
+
 
     </main>
 
