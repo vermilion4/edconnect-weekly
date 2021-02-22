@@ -8,16 +8,14 @@ class DataModel {
     }
 
     getById(id) {
-        for (let obj of this.data) {
+        for (const obj of this.data) {
             if (obj.id === id){
                 return obj;
             }
-            else{
-                return null
-            }
+        };
+        return null;
         }
 
-    }
 
     save(obj) {
         if (this.validate(obj)) {
@@ -44,14 +42,18 @@ class DataModel {
     }
 
     delete(id) {
-        let finder = this.data.filter(e => e.id === id)
-        if(finder === undefined){
-           return false
+
+        // get index of object with id
+        var removeIndex = this.data.map(function(item) {return item.id; }).indexOf(id);
+        if(!removeIndex){
+            return false
         }else{
-            this.data.splice(this.data.findIndex(e=>e.id === finder.id),1)
+            // remove object
+            this.data.splice(removeIndex, 1);
             return true
         }
-    console.log(this.data)
+
+
     }
 
 
