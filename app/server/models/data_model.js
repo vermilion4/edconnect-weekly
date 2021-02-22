@@ -45,14 +45,13 @@ class DataModel {
 
         // get index of object with id
         var removeIndex = this.data.map(function(item) {return item.id; }).indexOf(id);
-        if(removeIndex===undefined){
-            return false
-        }else{
+
+        if(removeIndex!==-1){
             // remove object
             this.data.splice(removeIndex, 1);
             return true
         }
-
+            return false
 
     }
 
