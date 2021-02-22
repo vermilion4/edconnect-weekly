@@ -12,8 +12,11 @@ class DataModel {
             if (obj.id === id){
                 return obj;
             }
-        };
-        return null;
+            else{
+                return null
+            }
+        }
+
     }
 
     save(obj) {
@@ -41,17 +44,14 @@ class DataModel {
     }
 
     delete(id) {
-
-        var find = this.data,
-            finder = find.filter(e => e.id === id)
-
-        if(finder===undefined){
-            return false
+        let finder = this.data.filter(e => e.id === id)
+        if(finder === undefined){
+           return false
         }else{
-            finder.forEach(f => find.splice(find.findIndex(e => e.id === f.id),1));
+            this.data.splice(this.data.findIndex(e=>e.id === finder.id),1)
             return true
         }
-
+    console.log(this.data)
     }
 
 
