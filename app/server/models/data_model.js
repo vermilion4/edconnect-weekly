@@ -43,12 +43,16 @@ class DataModel {
     delete(id) {
 
         var find = this.data,
-            finder = find.filter(e => e.id === id);
-        finder.forEach(f => find.splice(find.findIndex(e => e.id === f.id),1));
-        return true
+            finder = find.filter(e => e.id === id)
+
+        if(finder===undefined){
+            return false
+        }else{
+            finder.forEach(f => find.splice(find.findIndex(e => e.id === f.id),1));
+            return true
+        }
 
     }
-
 
 
     // this method will be overriden in the sub classes
