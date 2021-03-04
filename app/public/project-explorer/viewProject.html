@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Explorer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <style>
+        h5 {
+            color: grey;
+        }
+
+        strong {
+            color: black;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--This is the view project page of the project; Users should be able to view the project
+details on a dedicated project page.-->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <a class="navbar-brand" href="index.html">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+            <form class="form-inline my-2 my-lg-0" name="prp">
+                <input class="form-control" type="text" placeholder="Search Projects" style="margin-right: 5px;">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="createProject.html">Submit</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav auth-buttons hidden">
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav auth-buttons hidden">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id='logout'>Logout</a>
+                </li>
+
+                <li class="nav-item">
+                    <span class='text-white navbar-text' id='username'></span>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main>
+
+    <h1 style="margin-left: 10%; margin-top: 5%" id="project_name">Project 4</h1>
+    <table class="jumbotron" style="margin-left: 10%">
+        <tr>
+            <th style="padding-right: 265px; padding-left: 10px;">Created By</th>
+            <th style="padding-right: 265px; padding-left: 10px;">Date Created</th>
+            <th style="padding-right: 265px; padding-left: 10px;">Last Updated</th>
+        </tr>
+        <tr>
+            <td id="project_author" style="padding-left: 10px">Ade Ade</td>
+            <td style="padding-left: 10px">2020-09-04</td>
+            <td style="padding-left: 10px">2020-09-04</td>
+            <td><a class="btn btn-primary" href="editProject.html" role="button">Edit Project</a>
+            </td>
+        </tr>
+
+    </table>
+
+    <div class="row" style="margin-left: 10%; margin-right: 10%">
+        <div class="col-md-6">
+            <form>
+                <h4 id="project_abstract">Project Abstract</h4>
+                <hr>
+                <p style="width: 450px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p><strong>Comments</strong></p>
+                <textarea class="form-control" cols="55" rows="4">Leave a comment</textarea><br>
+
+                <input type="submit" value='Submit' class="btn btn-primary" style="margin-top: 50px"/>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <div class="edit_project2">
+                <h4>Project Details</h4>
+                <hr>
+                <div class="card" style="width: 580px; margin-bottom: 2%">
+                    <div class="card-header">
+                        Author(s)
+                    </div>
+                    <div id="parent">
+                    <ul class="list-group list-group-flush" id="project_authors">
+                    </ul>
+                    </div>
+                    <div class="card-header">
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> <a href="#" id='project_tags' class="card-link">#Javascript</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 580px;">
+                    <div class="card-header">
+                        Project files
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" style="text-align: center">No file uploaded yet</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</main>
+<footer class="jumbotron" style="padding: 5px 0;
+                                    margin:5% 10% 3% 10%;
+                                    text-align: right;">
+    <h5 style="font-size: 15px">Project Explorer &copy 2020 &middot <strong>Edconnect</strong></h5>
+</footer>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

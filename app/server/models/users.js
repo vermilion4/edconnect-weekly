@@ -50,6 +50,7 @@ class Users extends DataModel {
         this.errors = [];
 
         for (const property in obj) {
+            console.log(property)
             if(obj[property] === ""){
                 this.errors.push(`${property} should not be empty`);
             }

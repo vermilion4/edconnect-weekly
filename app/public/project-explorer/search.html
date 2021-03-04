@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Explorer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <style>
+        h5 {
+            color: grey;
+        }
+
+        strong {
+            color: black;
+        }
+
+        .in_h3, .in_h4 {
+            display: inline-block;
+        }
+
+        .in_h4 {
+            color: grey;
+        }
+
+    </style>
+</head>
+<body>
+<!--This is the search page of the project; User should be able to search for a project using
+the following fields-->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <a class="navbar-brand" href="index.html">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+            <form class="form-inline my-2 my-lg-0" name="prp">
+                <input class="form-control" type="text" placeholder="Search Projects" style="margin-right: 5px;">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="createProject.html">Submit</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main>
+
+
+    <h1 style="margin: 8% 0% 2% 10%">Project Gallery</h1>
+    <form class="jumbotron" style="margin-left: 10%; margin-right: 10%;padding-left:60px;
+                                           padding-top: 10px; padding-bottom: 0px">
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="searchTerm"
+                           placeholder="Search project name, authors, abstract, tags">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" style="padding-left: 0">
+                <label class="sr-only" for="inlineFormInputGroup">Searchby</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Search by</div>
+                    </div>
+                    <select name="searchBy" class="form-control form-control-lg" id="inlineFormInputGroup">
+                        <option>Name</option>
+                        <option>Author</option>
+                        <option>Abstract</option>
+                        <option>Tag</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="col-lg-2 col-md-6" style="padding-left: 0">
+                <input type="submit" value="Submit" class="btn btn-lg btn-primary">
+            </div>
+        </div>
+
+    </form>
+
+    <div class="all" style="margin-left: 10%">
+        <h3 class="in_h3">All Projects</h3>
+        <h4 class="in_h4">(1 results)</h4>
+    </div>
+    <div class="row" style="margin-left: 10%; margin-bottom: 5%;">
+        <div class="col-md-3 col-sm-4" style="border: 1px solid grey; padding-top: 10px">
+            <p style="color: dodgerblue;">a</p>
+            <p style="color: grey;">dsad</p>
+            <p>dsa</p><br>
+            <p style="color: dodgerblue;">#ds</p>
+        </div>
+    </div>
+
+    <footer class="jumbotron" style="padding: 5px 0;
+                                    margin:5% 10% 3% 10%;
+                                    text-align: right;">
+        <h5 style="font-size: 15px">Project Explorer &copy 2020 &middot <strong>Edconnect</strong></h5>
+    </footer>
+
+
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

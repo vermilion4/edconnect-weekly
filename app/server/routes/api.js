@@ -57,6 +57,7 @@ const requireLogin = (req, res, next) => {
 };
 
 api.post("/register", (req, res) => {
+
   const {
     firstname,
     lastname,
@@ -77,11 +78,12 @@ api.post("/register", (req, res) => {
     program,
     graduationYear
   );
+
   const success = users.save(user);
   if (success) {
     saveUsersDb(users.data);
   }
-  handlePost(success, { id: user.id }, users.errors, res);
+  handlePost(success, { id: user.id}, users.errors, res);
 });
 
 api.post("/login", (req, res) => {
@@ -144,5 +146,7 @@ api.get("/programs", (req, res) => {
 api.get("/graduationYears", (req, res) => {
   res.json(["2015", "2016", "2017", "2018", "2019", "2020"]);
 });
+
+
 
 module.exports = api;
