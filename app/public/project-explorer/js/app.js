@@ -1,5 +1,5 @@
 var user = null;
-uri = window.location.href.split('/').pop();
+let uri = window.location.href.split('/').pop();
 
 function getCookieId() {
     if (document.cookie.includes('uid')) {
@@ -13,12 +13,13 @@ function getCookieId() {
 
 function showLoggedInUser() {
 
-    let authElements = document.querySelectorAll('.auth-buttons');
+    let authElements = $('ul');
+
     if (user) {
-        authElements[1].classList.toggle('hidden')
+        authElements[2].classList.toggle('hidden')
         document.getElementById("username").textContent = 'Hi ' + user.firstname;
     } else {
-        authElements[0].classList.toggle('hidden')
+        authElements[1].classList.toggle('hidden')
     }
 };
 
