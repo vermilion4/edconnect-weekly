@@ -28,7 +28,7 @@ async function initUser() {
     if (userId) {
         let response = await fetch('/api/users/' + userId)
         user = await response.json();
-    } else if (!user && uri.startsWith('createProject.html')) {
+    } else if (!user && uri.startsWith('createproject.html')) {
         window.location = 'login.html';
     }
     showLoggedInUser();
