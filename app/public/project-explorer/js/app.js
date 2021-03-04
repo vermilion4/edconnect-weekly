@@ -28,7 +28,7 @@ async function initUser() {
     if (userId) {
         let response = await fetch('/api/users/' + userId)
         user = await response.json();
-    } else if (!user && uri.startsWith('createproject.html')) {
+    } else if (!user && uri.startsWith('createProject.html')) {
         window.location = 'login.html';
     }
     showLoggedInUser();
@@ -266,7 +266,7 @@ $( document ).ready(function(event) {
     } else if (uri.startsWith('login.html')) {
         loginPost();
     }
-    else if (uri.startsWith('createproject.html')) {
+    else if (uri.startsWith('createProject.html')) {
         projectPost();
         logOut();
     }
