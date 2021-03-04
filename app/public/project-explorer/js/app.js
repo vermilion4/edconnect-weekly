@@ -266,7 +266,7 @@ $( document ).ready(function(event) {
     } else if (uri.startsWith('login.html')) {
         loginPost();
     }
-    else if (uri.startsWith('createProject.html')) {
+    else if (uri.startsWith('createproject.html')) {
         projectPost();
         logOut();
     }
