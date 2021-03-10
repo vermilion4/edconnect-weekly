@@ -50,7 +50,7 @@ function programs() {
     dropdown.append('<option selected="true" disabled>Choose Program</option>');
     dropdown.prop('selectedIndex', 0);
 
-    const url = 'http://localhost:4000/api/programs';
+    const url = '/api/programs';
 
 // Populate dropdown with list of programs
     $.getJSON(url, function (data) {
@@ -68,7 +68,7 @@ function years() {
     dropdown2.append('<option selected="true" disabled>Select Year</option>');
     dropdown2.prop('selectedIndex', 0);
 
-    const url2 = 'http://localhost:4000/api/graduationYears';
+    const url2 = '/api/graduationYears';
 
 // Populate dropdown with list of grad years
     $.getJSON(url2, function (data) {
